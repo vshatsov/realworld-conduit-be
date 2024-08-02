@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "conduit"
+version = "0.1.0"
+description = ""
+authors = ["Vitali Shatsou <vitali.shatsou@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.112.0"}
+
+
+[tool.poetry.scripts]
+start = "conduit.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
